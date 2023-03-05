@@ -1,0 +1,22 @@
+@page
+@model RazorApp.Pages.Index;
+
+@{
+  Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Razor Page</title>
+  </head>
+  <body>
+    <div>
+      @for(var i=0 ; i<=10; i++)
+      {
+       <p>Item @i</p>
+      }
+    </div>
+  </body>
+</html>
