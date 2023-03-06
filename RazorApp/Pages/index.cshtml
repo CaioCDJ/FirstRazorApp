@@ -1,10 +1,6 @@
 @page
 @model RazorApp.Pages.Index;
 
-@{
-  Layout = null;
-}
-
 <!DOCTYPE html>
 
 <html>
@@ -13,10 +9,26 @@
   </head>
   <body>
     <div>
-      @for(var i=0 ; i<=10; i++)
-      {
-       <p>Item @i</p>
-      }
+      
+      <table>
+        <thead>
+          <tr>
+            <td> Clube</td>
+            <td> Cidade</td>
+          </tr>
+        </thead>
+        
+        <tbody>
+          @foreach(var item in Model.clubes){
+            <tr>
+              <td> @item.nome</td>
+              <td> @item.cidade</td>
+            </tr>
+          }
+        </tbody>
+
+      </table>
+
     </div>
   </body>
 </html>
