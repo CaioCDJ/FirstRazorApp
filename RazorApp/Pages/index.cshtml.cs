@@ -11,7 +11,7 @@ public class Index : PageModel
   public async Task OnGet(){
   
     // deixa o navegador em estado de loading
-    await Task.Delay(5000);
+    //await Task.Delay(5000);
 
     clubes.Add(new Clubes("Peixão Soccer Club", "Santos"));
     clubes.Add(new Clubes("Black Bridge", "Campinas"));

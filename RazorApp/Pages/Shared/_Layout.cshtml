@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Razor App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <!-- Forma antiga de usar uma partial
+        @Html.RenderPartialAsync("Shared/NavMenuPartial")
+      -->
+      <partial name="Shared/NavMenuPartial"/>
+    </header>
+    <main>
+      <!--Renderiza o corpo de pagina que invoca o layout-->
+      @RenderBody()
+    </main>
+  </body>
+</html>

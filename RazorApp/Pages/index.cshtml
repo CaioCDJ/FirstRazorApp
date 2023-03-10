@@ -1,37 +1,19 @@
 @page
-@model RazorApp.Pages.Index;
+@model RazorApp.Pages.Index
 
-<!DOCTYPE html>
+@{
+  Layout = "Shared/_Layout";
+}
 
-<html>
-  <head>
-    <title>Razor Page</title>
-  </head>
-  <body>
-
-    <ul>
-      <li>
-        <a href="~/">Home</a>
-      </li>
-
-      <li>
-        <a href="~/login">Login</a>
-      </li>
-
-      <li>
-        <a href="~/sobre">Sobre</a>
-      </li>
-    </ul>
-
-    <div>  
+<h1>Index</h1>
+<div>  
       <table>
         <thead>
           <tr>
             <td> Clube</td>
             <td> Cidade</td>
           </tr>
-        </thead>
-        
+        </thead>        
         <tbody>
           @foreach(var item in Model.clubes){
             <tr>
@@ -44,5 +26,3 @@
       </table>
 
     </div>
-  </body>
-</html>
